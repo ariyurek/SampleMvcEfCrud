@@ -1,0 +1,16 @@
+﻿CREATE TABLE [dbo].[Employee](  
+[ID] [bigint] IDENTITY(1,1) NOT NULL,  
+[Name] [nvarchar](max) NULL,  
+[Designation] [nvarchar](200) NULL,  
+[Location] [nvarchar](200) NULL,  
+CONSTRAINT [PK_Employee] PRIMARY KEY CLUSTERED  
+(  
+   [ID] ASC  
+))  
+
+INSERT [dbo].[Employee] ([Name], [Designation], [Location]) VALUES ( N'Gnanavel Sekar', N'Software Engineer', N'Chennai')  
+GO  
+INSERT [dbo].[Employee] ([Name], [Designation], [Location]) VALUES ( N'Subash', N'Software Engineer', N'Coimbatore')  
+GO  
+INSERT [dbo].[Employee] ([Name], [Designation], [Location]) VALUES ( N'Robert', N'Application Developer', N'Banglore')  
+GO  
